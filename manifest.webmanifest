@@ -1,0 +1,16 @@
+{
+  "name": "Hinder",
+  "short_name": "Hinder",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#da0b79",
+  "theme_color": "#da0b79",
+  "icons": [
+    {
+      "src": "/app-icon.svg",
+      "sizes": "180x180 192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
