@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Höghus Match</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="phone-shell" aria-live="polite">
+    <section id="startScreen" class="screen start-screen is-active">
+      <div class="statusbar"><span>12:12</span><span>••• 4G ◐</span></div>
+      <div class="brand">
+        <div class="logo logo-large" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <h1>Höghus Match</h1>
+      </div>
+      <p class="terms">Genom att fortsätta godkänner du våra villkor och vår integritetspolicy.</p>
+      <button id="startBtn" class="pill-button">Starta</button>
+      <small>Klicka för att börja svajpa</small>
+    </section>
+
+    <section id="swipeScreen" class="screen swipe-screen" hidden>
+      <div class="topbar">
+        <div class="logo logo-small" aria-hidden="true"><span></span><span></span><span></span></div>
+        <strong>Höghus Match</strong>
+      </div>
+
+      <div id="cardStack" class="card-stack" aria-label="Profiler att svajpa på"></div>
+
+      <div class="actions">
+        <button class="round nope" id="nopeBtn" aria-label="Svajpa vänster">✕</button>
+        <button class="round like" id="likeBtn" aria-label="Svajpa höger">♥</button>
+      </div>
+      <p class="hint">Dra kortet åt höger eller vänster, eller använd knapparna.</p>
+    </section>
+
+    <section id="matchScreen" class="screen match-screen" hidden>
+      <div class="match-content">
+        <div class="logo logo-large" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="eyebrow">Ny match!</p>
+        <h2>Du matchade med Lina</h2>
+        <div class="match-avatar" style="background-image: url('images/profile-4.svg')"></div>
+        <p>Lina, 34<br>Projektledare · gillar stadsliv, kaffe och arkitektur.</p>
+        <button id="restartBtn" class="pill-button">Börja om</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
