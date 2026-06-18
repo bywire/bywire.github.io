@@ -637,7 +637,6 @@
             const profiles = [
                 {
                     name: "Sara",
-                    age: 29,
                     text: "Älskar innergårdar och kvällssol",
                     image: "images/profile-1.jpg",
                     a: "#f2c27d",
@@ -645,7 +644,6 @@
                 },
                 {
                     name: "Nora",
-                    age: 31,
                     text: "Kaffe, kultur och kollektivtrafik",
                     image: "images/profile-2.jpg",
                     a: "#eadf7a",
@@ -653,7 +651,6 @@
                 },
                 {
                     name: "Maja",
-                    age: 27,
                     text: "Cyklar överallt i stan",
                     image: "images/profile-3.jpg",
                     a: "#b5df7a",
@@ -661,7 +658,6 @@
                 },
                 {
                     name: "Lina",
-                    age: 34,
                     text: "Projektledare med hjärta för höghus",
                     image: "images/profile-4.jpg",
                     a: "#8ddf7a",
@@ -690,7 +686,7 @@
                 const card = document.createElement("article");
                 card.className = "card";
                 card.style.transform = `scale(${1 - offset * 0.035}) translateY(${offset * 10}px)`;
-                card.innerHTML = `<div class="profile-art" style="--a:${profile.a};--b:${profile.b}"><img class="profile-photo" src="${profile.image}" alt="${profile.name}" /></div><div class="badge like">LIKE</div><div class="badge nope">NOPE</div><div class="card-info"><h2>${profile.name}, ${profile.age}</h2><p>${profile.text}</p></div>`;
+                card.innerHTML = `<div class="profile-art" style="--a:${profile.a};--b:${profile.b}"><img class="profile-photo" src="${profile.image}" alt="${profile.name}" /></div><div class="badge like">LIKE</div><div class="badge nope">NOPE</div><div class="card-info"><h2>${profile.name}</h2><p>${profile.text}</p></div>`;
                 return card;
             }
             function renderStack() {
